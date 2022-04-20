@@ -52,7 +52,7 @@ cardArray.sort(() => 0.5 - Math.random())
 
 const grid = document.querySelector('#grid')
 const resultDisplay = document.querySelector('#result')
-console.log(resultDisplay)
+const finalDisplay = document.getElementById('final-massage')
 let cardChosen = []
 let cardChosenId = []
 const cardsWon=[]
@@ -86,7 +86,7 @@ function checkMatch(){
         cardsWon.push(cardChosen)
         resultDisplay.innerHTML = cardsWon.length
         if(cardsWon.length == 6){
-            resultDisplay.innerHTML = 'Congratulations you found all matches!'  
+            finalDisplay.innerHTML = 'Congratulations you found all matches!'  
         }
     }
     else{
