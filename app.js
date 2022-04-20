@@ -66,7 +66,6 @@ function createBoard(){
             card.addEventListener('click',flipCard)
             grid.appendChild(card)
         }
-        console.log(cardArray)
 }
 
 function checkMatch(){
